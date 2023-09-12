@@ -1,5 +1,5 @@
 #include "main.h"
-void print_alphabet()
+void 2-print_alphabet_x10.c()
 {
 int i,j;
 for(j=0; j<9; ++j)
