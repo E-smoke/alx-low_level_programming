@@ -1,6 +1,10 @@
 #include "main.h"
-int main()
-{
- print_alphabet();
-return 0;
-}
+void print_alphabet()
+ {
+ int i;
+ for(i=97;i<123; ++i)
+ {
+  _putchar(i);
+ }
+ _putchar('\n');
+ }
