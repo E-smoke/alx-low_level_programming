@@ -1,5 +1,5 @@
 #include "main.h" 
-int print_alphabet( int c)
+int _isalpha(int c)
  {
  if(c>=97&&c<123)
  {
