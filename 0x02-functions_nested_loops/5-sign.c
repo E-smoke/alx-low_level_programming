@@ -16,5 +16,6 @@ return -1;
 if((-1*n)==n)
 {
 _putchar('0');
-return 1;
+return 0;
+}
 }
