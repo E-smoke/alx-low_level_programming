@@ -36,7 +36,7 @@ _putchar(j[4]);
 _putchar('\n');
 }
 if((j[0]!=50)||(j[1]!=51)||(j[3]!=53)||(j[4]!=57))
-{
+{ 
 _putchar(j[0]);
 _putchar(j[1]);
 _putchar(j[2]);
@@ -45,4 +45,10 @@ _putchar(j[4]);
 _putchar('\n');
 }
 }
+}
+
+int main()
+{
+	jack_bauer();
+return 0;
 }
