@@ -18,4 +18,5 @@ if((-1*n)==n)
 _putchar('0');
 return 0;
 }
+return 2;
 }
