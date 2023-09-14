@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main()
 {
-int i,temp;
+int temp;
 int f1=1;
 int f2=1;
 temp=f2;
