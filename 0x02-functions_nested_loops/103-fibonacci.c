@@ -17,7 +17,7 @@ if((f2%2)==0)
 sum=sum+f2;
 }
 }
-printf("%d", sum);
+printf("%d\n", sum);
 return 0;
 }
 
