@@ -1,5 +1,5 @@
 #include "main.h"
-void print_most_numbers()
+void more_numbers(void)
 {
 int i;
 int j;
