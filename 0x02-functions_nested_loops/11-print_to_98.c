@@ -13,7 +13,7 @@ printf("%d, ", i);
 }
 if(i==98)
 {
-printf("%d", i);
+printf("%d\n", i);
 }
 }
 }
@@ -27,7 +27,7 @@ printf("%d, ", i);
 }
 if(i==98)
 {
-printf("%d", i);
+printf("%d\n", i);
 }
 }
 }
