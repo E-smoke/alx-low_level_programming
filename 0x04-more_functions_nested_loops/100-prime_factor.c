@@ -43,6 +43,6 @@ if((array[i+1]>array[i])&&i!=c)
 l=array[i+1];
 }
 }
-printf("%lu\n", l);
+printf("%llu\n", l);
 return 0;
 }
