@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int prime(long unsigned int a)
 {
 long unsigned int i;
@@ -17,7 +18,7 @@ return 1;
 }
 
 int main()
-{
+{long long unsigned l;
 long unsigned int i;
 long long unsigned int array[10];
 long unsigned int c=0;
@@ -34,12 +35,14 @@ i=1;
 }
 array[c]=n;
 array[c+1]=612852475143;
-c=0;
-while(array[c]!=612852475143)
+l=array[0];
+for(i=0; i<c; ++i)
 {
-printf("%lu ", array[c]);
-++c;
+if((array[i+1]>array[i])&&i!=c)
+{
+l=array[i+1];
 }
+}
+printf("%lu\n", l);
 return 0;
 }
-
