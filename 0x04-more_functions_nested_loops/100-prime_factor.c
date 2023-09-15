@@ -19,11 +19,12 @@ return 1;
 }
 
 int main()
-{long long unsigned l;
+{
+long unsigned l;
 long unsigned int i;
-long long unsigned int array[10];
+long unsigned int array[10];
 long unsigned int c=0;
-long long unsigned int n=612852475143;
+long unsigned int n=612852475143;
 for(i=2; i<n; ++i)
 {
 if(((n%i)==0)&&primes(i))
@@ -44,6 +45,6 @@ if((array[i+1]>array[i])&&i!=c)
 l=array[i+1];
 }
 }
-printf("%llu\n", l);
+printf("%lu\n", l);
 return 0;
 }
