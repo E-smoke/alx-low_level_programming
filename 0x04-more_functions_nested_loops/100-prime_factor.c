@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int prime(long unsigned int a)
+int primes(long unsigned int a);
+int primes(long unsigned int a)
 {
 long unsigned int i;
 for(i=2; i<a; ++i)
@@ -25,7 +26,7 @@ long unsigned int c=0;
 long long unsigned int n=612852475143;
 for(i=2; i<n; ++i)
 {
-if(((n%i)==0)&&prime(i))
+if(((n%i)==0)&&primes(i))
 {
 array[c]=i;
 ++c;
