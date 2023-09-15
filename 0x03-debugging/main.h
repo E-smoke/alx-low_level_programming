@@ -3,7 +3,8 @@
 
 #include <stdio.h>
 /**
-* positive_or_negative - function that prints if integer is positive or negative
+* positive_or_negative - prints if integer is positive or negative
+* @i: the number to be tested
 * Return: 0
 */
 
