@@ -8,6 +8,7 @@
 
 int _strlen(char *s)
 {
+int n = 0;
 while (s[n] != '\0')
 {
 n++;
@@ -31,12 +32,12 @@ while (s[n] != '\0')
 {
 n++;
 }
-for (i = (n - 1); i >= 0; --i)
+for (i = (_strlen(s) - 1); i >= 0; --i)
 {
 temp[j] = s[i];
 j++;
 }
-for (i = 0; i < n; ++i)
+for (i = 0; i < _strlen(s); ++i)
 {
 s[i] = temp[i];
 }
