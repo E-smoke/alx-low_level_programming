@@ -26,4 +26,5 @@ for (i = (((n - 1) / 2) + 1); i < n; ++i)
 _putchar(str[i]);
 }
 }
+_putchar('\n');
 }
