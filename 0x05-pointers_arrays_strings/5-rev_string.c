@@ -28,7 +28,7 @@ int c = _strlen(s);
 int i;
 int j = 0;
 int n = 0;
-char temp[c];
+char temp[500];
 while (s[n] != '\0')
 {
 n++;
