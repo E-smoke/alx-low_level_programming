@@ -24,20 +24,21 @@ return (n);
 
 void rev_string(char *s)
 {
+int c = _strlen(s);
 int i;
 int j = 0;
 int n = 0;
-char temp[_strlen(s)];
+char temp[c];
 while (s[n] != '\0')
 {
 n++;
 }
-for (i = (_strlen(s) - 1); i >= 0; --i)
+for (i = (c - 1); i >= 0; --i)
 {
 temp[j] = s[i];
 j++;
 }
-for (i = 0; i < _strlen(s); ++i)
+for (i = 0; i < c; ++i)
 {
 s[i] = temp[i];
 }
