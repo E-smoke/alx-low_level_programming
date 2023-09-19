@@ -25,9 +25,9 @@ return (n);
 void rev_string(char *s)
 {
 int i;
-char temp[_strlen(s)];
-int n = 0;
 int j = 0;
+int n = 0;
+char temp[_strlen(s)];
 while (s[n] != '\0')
 {
 n++;
