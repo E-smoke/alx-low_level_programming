@@ -3,11 +3,11 @@
  * _strcpy - copy content of one string to another
  * @dest: destination
  * @src: source
- * return: returns string
+ * Return: returns string
  */
 char *_strcpy(char *dest, char *src)
 {
-int n=0;
+int n = 0;
 while (src[n] != '\0')
 {
 dest[n] = src[n];
