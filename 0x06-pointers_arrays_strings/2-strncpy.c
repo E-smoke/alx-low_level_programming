@@ -8,16 +8,16 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int l = -1;
 int i;
-for(i = 0; i < n; ++i)
+int l = -1;
+for (i = 0; i < n; ++i)
 {
-if(src[i] == '\n')
+if (src[i] == '\n')
 {
 l = i;
 }
 }
-if(l == -1)
+if (l == -1)
 {
 for (i = 0; i < n; ++i)
 {
@@ -28,7 +28,7 @@ else
 {
 for (i = 0; i < n; ++i)
 {
-if(i >= l)
+if (i >= l)
 {
 dest[i] = '\0';
 }
