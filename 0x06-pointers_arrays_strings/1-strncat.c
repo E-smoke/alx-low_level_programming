@@ -14,11 +14,14 @@ while (dest[c] != '\0')
 {
 ++c;
 }
-for (i = 0; i < n; ++i)
+for (i = 0; i <= n; ++i)
 {
 dest[c + i] = src[i];
+if (src[i] == '\0')
+{
+i = n;
 }
-dest[c + i] = '\0';
+}
 return (dest);
 }
 
