@@ -15,11 +15,11 @@ char num[6] = "43071";
 while (in[c] != '\0')
 {
 ++c;
-}for (n = 0; n < c; ++n)
+} for (n = 0; n < c; ++n)
 {
-for(i = 0; i < 6; ++i)
+for (i = 0; i < 6; ++i)
 {
-if((in[n] == s[i]) || (in[n] == s1[i]))
+if ((in[n] == s[i]) || (in[n] == s1[i]))
 {
 in[n] = num[i];
 }
