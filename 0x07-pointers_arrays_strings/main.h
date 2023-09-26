@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 int _putchar(char c);
 
 char *_memset(char *s, char b, unsigned int n);
@@ -16,4 +17,6 @@ char *_strstr(char *haystack, char *needle);
 int comp(int i, int j, char *haystack, char *needle);
 
 void print_chessboard(char (*a)[8]);
+
+void print_diagsums(int *a, int size);
 
