@@ -18,5 +18,5 @@ int comp(int i, int j, char *haystack, char *needle);
 
 void print_chessboard(char (*a)[8]);
 
-void print_diagsums(int *a, int siz);
+void print_diagsums(int *a, int size);
 
