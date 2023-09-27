@@ -13,7 +13,7 @@ return (-1);
 }
 if ((i * i) == n)
 {
-return(i);
+return (i);
 }
 return (loop1((i + 1), n));
 }
