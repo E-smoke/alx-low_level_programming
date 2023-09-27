@@ -19,7 +19,7 @@ if ((n % i) == 0)
 {
 return(0);
 }
-return (loop((i + 1),n));
+return (loop((i + 1), n));
 }
 /**
  * is_prime_number - funct
@@ -29,5 +29,5 @@ return (loop((i + 1),n));
 int is_prime_number(int n)
 {
 int i = 2;
-return (loop(i,n));
+return (loop(i, n));
 }

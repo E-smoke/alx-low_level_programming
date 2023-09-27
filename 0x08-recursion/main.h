@@ -16,3 +16,7 @@ int _sqrt_recursion(int n);
 
 int is_prime_number(int n);
 
+int loop(int i, int n);
+
+int loop1(int i, int n);
+
