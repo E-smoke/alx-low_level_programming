@@ -7,7 +7,6 @@
  */
 int main(int argc, char __attribute__((unused)) *argv[])
 {
-_putchar(argc + 48);
-_putchar('\n');
+printf("%d\n", argc);
 return (0);
 }
