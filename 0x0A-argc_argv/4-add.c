@@ -14,14 +14,14 @@ if (argc == 1)
 printf("0\n");
 return (0);
 }
-for (i = 0; i < argc; ++i)
+for (i = 1; i < argc; ++i)
 {
 if (atoi(argv[i]) == 0)
 {
 return (1);
 }
 }
-for (i = 0; i < argc; ++i)
+for (i = 1; i < argc; ++i)
 {
 mult = (mult *atoi(argv[i]));
 }
