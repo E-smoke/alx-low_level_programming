@@ -5,7 +5,7 @@
  * @argv: second para
  * Return: returns an integer
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
 int i;
 int c = 0;
