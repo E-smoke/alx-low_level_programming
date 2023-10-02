@@ -7,21 +7,20 @@
  */
 int main(int argc, char *argv[])
 {
-int cent;
 int rem;
 int d;
 int num = 0;
-cent = atoi(argv[1]);
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-d = cent / 25;
+rem = atoi(argv[1]);
+d = rem / 25;
 if (d > 0)
 {
 num = d;
-rem = cent - (d * 25);
+rem = rem - (d * 25);
 }
 d = rem / 10;
 if (d > 0)
