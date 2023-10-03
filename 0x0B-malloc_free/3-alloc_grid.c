@@ -24,7 +24,10 @@ for (i = 0; i < height; ++i)
 *(ptr + i) = (int *)malloc(width * sizeof(int));
 if (*(ptr + i) == NULL)
 {
-free(ptr);
+for (j = (i - 1); j < 0; --j)
+{
+free(*(ptr + j));
+}
 return (NULL);
 }
 }
