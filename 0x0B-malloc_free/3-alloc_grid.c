@@ -28,6 +28,7 @@ for (j = (i - 1); j < 0; --j)
 {
 free(*(ptr + j));
 }
+free(ptr);
 return (NULL);
 }
 }
