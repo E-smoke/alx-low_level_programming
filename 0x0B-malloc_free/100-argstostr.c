@@ -14,11 +14,11 @@ char *ptr;
 int c;
 c = 0;
 k = 0;
-if ((ac == 1) || (av == NULL))
+if ((ac == 0) || (av == NULL))
 {
 return (NULL);
 }
-for (i = 1; i < ac; ++i)
+for (i = 0; i < ac; ++i)
 {
 j = 0;
 while (av[i][j] != '\0')
