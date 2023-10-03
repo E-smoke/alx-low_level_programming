@@ -15,9 +15,17 @@ if ((width <= 0) || (height <= 0))
 return (NULL);
 }
 ptr = (int **)malloc(height * sizeof(int *));
+if (ptr == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < height; ++i)
 {
 *(ptr + i) = (int *)malloc(width * sizeof(int));
+if (*(ptr + i) == NULL)
+{
+free(ptr);
+}
 }
 for (i = 0; i < height; ++i)
 {
