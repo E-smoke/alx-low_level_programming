@@ -5,12 +5,12 @@
  * @c: 2p
  * Return: returns a void pointer
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int siz, char c)
 {
 int i;
 char *ptr;
-ptr = (char *)malloc(size);
-for (i = 0; i < size; ++i)
+ptr = (char *)malloc(siz);
+for (i = 0; i < siz; ++i)
 {
 *(ptr + i) = c;
 }
