@@ -10,13 +10,13 @@ int i;
 int c;
 char *ptr;
 c = 0;
-while (str[c] != '\0')
-{
-++c;
-}
 if (str == NULL)
 {
 return (NULL);
+}
+while (str[c] != '\0')
+{
+++c;
 }
 ptr = (char *)malloc((c + 1) * sizeof(char));
 if (ptr == NULL)
