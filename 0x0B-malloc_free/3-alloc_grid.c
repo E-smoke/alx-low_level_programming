@@ -25,6 +25,7 @@ for (i = 0; i < height; ++i)
 if (*(ptr + i) == NULL)
 {
 free(ptr);
+return (NULL);
 }
 }
 for (i = 0; i < height; ++i)
