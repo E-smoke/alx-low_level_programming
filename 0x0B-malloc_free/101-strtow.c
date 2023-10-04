@@ -6,9 +6,18 @@
  */
 char **strtow(char *str)
 {
-int i, j, c, t, k, w;
+int i;
+int j;
+int c;
+int t;
+int k;
+int w;
 char **ptr;
-t = j = c = w = 0;
+t = 0;
+i = 0;
+j = 0;
+c = 0;
+w = 0;
 k = -1;
 if (str == NULL)
 {
@@ -28,33 +37,6 @@ ptr = (char **)malloc(w * sizeof(char *));
 if (ptr == NULL)
 {
 return (NULL); }
-if (strtow1(ptr, str, w) == NULL)
-{
-return (NULL);
-}
-for (i = 0; i < w; ++i)
-{
-j = 0;
-while (!((str[t] == ' ') || (str[t] == '\0')))
-{
-ptr[i][j] = str[t];
-++j;
-++t; }
-ptr[i][j] = '\0';
-++t; }
-return (ptr); }
-/**
- * strtow1 - funct
- * @ptr: 1p
- * @str: 2p
- * @w: 3p
- * Return: a pointer
- */
-char **strtow1(char **ptr, char *str, int w)
-{
-int i, j, k;
-j = 0;
-k = -1;
 for (i = 0; i < w; ++i)
 {
 while (((str[j] == ' ') || (str[j] == '\0')))
@@ -70,5 +52,15 @@ free(ptr);
 return (NULL); }
 k = j;
 ++j; }
-return (ptr);
-}
+for (i = 0; i < w; ++i)
+{
+j = 0;
+while (!((str[t] == ' ') || (str[t] == '\0')))
+{
+ptr[i][j] = str[t];
+++j;
+++t; }
+ptr[i][j] = '\0';
+++t; }
+return (ptr); }
+
