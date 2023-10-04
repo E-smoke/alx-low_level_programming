@@ -33,7 +33,7 @@ for (i = 0; i <= c; ++i)
 if ((str[i] == ' ') || (str[i] == '\0'))
 {
 ++w; }}
-ptr = (char **)malloc(w * sizeof(char *));
+ptr = (char **)malloc((w + 1) * sizeof(char *));
 if (ptr == NULL)
 {
 return (NULL); }
@@ -62,5 +62,6 @@ ptr[i][j] = str[t];
 ++t; }
 ptr[i][j] = '\0';
 ++t; }
+ptr[w] = NULL;
 return (ptr); }
 
