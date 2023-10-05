@@ -16,7 +16,7 @@ return (NULL);
 }
 r = (max - min + 1);
 ptr = (int *)malloc(r *sizeof(int));
-if (ptr == 0)
+if (ptr == NULL)
 {
 return (NULL);
 }
@@ -24,5 +24,5 @@ for (i = 0; i < r; ++i)
 {
 ptr[i] = min + i;
 }
-return (0);
+return (NULL);
 }
