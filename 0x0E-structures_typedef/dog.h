@@ -1,5 +1,5 @@
-#ifndef dog
-#define dog
+#ifndef d
+#define d
 /**
  * struct dog - struct
  * @name: 1m
