@@ -4,22 +4,34 @@
  * @d: struct
  * Return: void
  */
-void print_dog(struct dog *d)
+void print_dog(dog_t *d)
 {
 if (d == NULL)
 {
 return;
 }
-if (name == NULL)
+if (d->name == NULL)
 {
-print("name: (nil)");
+printf("name: (nil)");
 }
-if (owner == NULL)
+else
 {
-print("owner: (nil)");
+printf("name:%s", d->name);
 }
-if (age == 0)
+if (d->owner == NULL)
 {
-print("age: (nil)");
+printf("owner: (nil)");
+}
+else
+{
+printf("owner:%s", d->owner);
+}
+if (d->age == 0)
+{
+printf("age: (nil)");
+}
+else
+{
+printf("age:%d", d->age);
 }
 }
