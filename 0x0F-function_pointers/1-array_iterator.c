@@ -12,7 +12,7 @@ if ((array == NULL) || (size <= 0) || (action == NULL))
 {
 return;
 }
-for (i = 0; i < siz; ++i)
+for (i = 0; i < size; ++i)
 {
 action(array[i]);
 }
