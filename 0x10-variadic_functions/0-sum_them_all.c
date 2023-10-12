@@ -1,4 +1,4 @@
-#include "variadic-functions.h"
+#include "variadic_functions.h"
 /**
  * sum_them_all - funct
  * @n: 1p
