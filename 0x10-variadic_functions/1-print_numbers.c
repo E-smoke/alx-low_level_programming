@@ -11,6 +11,7 @@ unsigned int i;
 va_list ptr;
 if (separator == NULL)
 {
+return;
 separator = "";
 }
 va_start(ptr, n);
