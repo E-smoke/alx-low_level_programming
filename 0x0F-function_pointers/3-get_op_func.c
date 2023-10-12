@@ -21,7 +21,7 @@ while ((ops[i].op) != NULL)
 {
 if (s[0] == (ops[i].op)[0])
 {
-ptr = &(ops[i].f);
+ptr = ops[i].f;
 return (ptr);
 }
 ++i;
