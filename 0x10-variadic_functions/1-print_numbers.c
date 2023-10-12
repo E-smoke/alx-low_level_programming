@@ -12,7 +12,6 @@ va_list ptr;
 if (separator == NULL)
 {
 return;
-separator = "";
 }
 va_start(ptr, n);
 for (i = 0; i < n; ++i)
