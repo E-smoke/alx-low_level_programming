@@ -1,8 +1,8 @@
-#include "1-print_numbers.c"
+#include "2-print_strings.c"
 #include <stdio.h>
 int main()
 {
-print_numbers("@", 2, 1, 4);
+print_strings(" ", 3, NULL, "kofi", "yaw");
 return (0);
 }
 
