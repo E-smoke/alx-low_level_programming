@@ -11,7 +11,7 @@ unsigned int i;
 va_list ptr;
 if (separator == NULL)
 {
-return;
+separator = "";
 }
 va_start(ptr, n);
 for (i = 0; i < n; ++i)
@@ -22,8 +22,9 @@ printf("%d%s", va_arg(ptr, int), separator);
 }
 else
 {
-printf("%d\n", va_arg(ptr, int));
+printf("%d", va_arg(ptr, int));
 }
 }
+_putchar('\n');
 va_end(ptr);
 }
