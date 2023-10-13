@@ -37,7 +37,7 @@ if (pc == NULL)
 {
 printf("%s(nill)", sep);
 break; }
-printf("%s%x", sep, pc);
+printf("%s%s", sep, pc);
 break;
 default:
 break; }
