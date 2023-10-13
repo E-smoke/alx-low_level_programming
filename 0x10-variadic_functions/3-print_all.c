@@ -13,9 +13,6 @@ char *pc, *sep;
 i = 0;
 j = 0;
 sep = "";
-if (format == NULL)
-{
-return; printf("\n"); }
 va_start(ptr, format);
 while (format[j] != '\0')
 {
@@ -40,7 +37,7 @@ if (pc == NULL)
 {
 printf("%s(nill)", sep);
 break; }
-printf("%s%s", sep, pc);
+printf("%s%x", sep, pc);
 break;
 default:
 break; }
