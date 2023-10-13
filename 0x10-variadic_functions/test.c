@@ -1,8 +1,8 @@
-#include "2-print_strings.c"
+#include "3-print_all.c"
 #include <stdio.h>
 int main()
 {
-print_strings(" ", 3, NULL, "kofi", "yaw");
+print_all("ceis", 'B', 3, "stSchool");
 return (0);
 }
 
