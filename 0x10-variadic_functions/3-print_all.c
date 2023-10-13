@@ -6,6 +6,9 @@
  */
 void print_all(const char * const format, ...)
 {
+if (format == NULL)
+{
+return; }
 int i, j;
 va_list ptr;
 char ch;
