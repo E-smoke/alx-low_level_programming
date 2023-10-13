@@ -6,9 +6,6 @@
  */
 void print_all(const char * const format, ...)
 {
-if (format == NULL)
-{
-return; }
 int i, j;
 va_list ptr;
 char ch;
@@ -16,6 +13,9 @@ char *pc, *sep;
 i = 0;
 j = 0;
 sep = "";
+if (format == NULL)
+{
+return; printf("\n"); }
 va_start(ptr, format);
 while (format[j] != '\0')
 {
