@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "1-list_len.c"
 #include "0-print_list.c"
 #include <string.h>
 
@@ -25,15 +26,9 @@ list_t *head;
     new->len = 5;
     new->next = head;
     head = new;
-    n = print_list(head);
+    n = list_len(head);
     printf("-> %lu elements\n", n);
-
-    printf("\n");
     free(new->str);
-    new->str = NULL;
-    n = print_list(head);
-    printf("-> %lu elements\n", n);
-
     free(new);
 return (0);
 }
