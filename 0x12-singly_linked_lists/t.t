@@ -1,6 +1,12 @@
 #include "lists.h"
 #include "0-print_list.c"
 #include <string.h>
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
 int main()
 {
 list_t *head;
