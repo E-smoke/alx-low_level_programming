@@ -1,5 +1,5 @@
-#ifndef LISTS
-#define LISTS
+#ifndef LI
+#define LI
 
 #include <unistd.h>
 #include <stdlib.h>
