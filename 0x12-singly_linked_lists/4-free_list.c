@@ -3,7 +3,6 @@
  * free_list - free
  * @head: a ptr
  */
-
 void free_list(list_t *head)
 {
 list_t *current;
@@ -14,19 +13,11 @@ return;
 }
 else
 {
-while (current != head)
+while (head != NULL)
 {
 current = head;
-while (current->next != NULL)
-{
-current = current->next;
-}
-if (current != head)
-{
+head = head->next;
 free(current);
-current = NULL;
 }
-}
-free(current);
 }
 }
