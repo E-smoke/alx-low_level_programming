@@ -29,3 +29,4 @@ current = NULL;
 }
 free(current);
 }
+}
