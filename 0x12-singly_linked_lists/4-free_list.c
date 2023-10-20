@@ -20,6 +20,10 @@ while (current->next != NULL)
 {
 current = current->next;
 }
+if (current == head)
+{
+break;
+}
 free(current);
 current = NULL;
 }
