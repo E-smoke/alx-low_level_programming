@@ -1,5 +1,8 @@
 #include <stdio.h>
-void asmf()
+/**
+ * asmf - function
+ */
+void asmf(void)
 {
 printf("Hello, Holberton");
 }
