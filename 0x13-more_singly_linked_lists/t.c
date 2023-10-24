@@ -1,8 +1,9 @@
 #include "lists.h"
 #include "0-print_listint.c"
+#include "1-listint_len.c"
 int main()
 {
- listint_t *head;
+listint_t *head;
     listint_t *new;
     listint_t hello = {8, NULL};
     size_t n;
@@ -17,7 +18,7 @@ int main()
     new->n = 9;
     new->next = head;
     head = new;
-    n = print_listint(head);
+    n = listint_len(head);
     printf("-> %lu elements\n", n);
     free(new);
 
