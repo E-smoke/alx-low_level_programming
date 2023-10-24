@@ -4,9 +4,10 @@
 #include "2-add_nodeint.c"
 #include "3-add_nodeint_end.c"
 #include "4-free_listint.c"
+#include "5-free_listint2.c"
 int main()
 {
- listint_t *head;
+listint_t *head;
 
     head = NULL;
     add_nodeint_end(&head, 0);
@@ -18,8 +19,8 @@ int main()
     add_nodeint_end(&head, 402);
     add_nodeint_end(&head, 1024);
     print_listint(head);
-    free_listint(head);
-    head = NULL;
+    free_listint2(&head);
+    printf("%p\n", (void *)head);
 
 return (0);
 }
