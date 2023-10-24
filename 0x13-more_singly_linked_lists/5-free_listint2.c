@@ -10,6 +10,7 @@ listint_t *current;
 current = *head;
 if (*head == NULL)
 {
+head = NULL;
 return;
 }
 else
