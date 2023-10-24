@@ -16,7 +16,7 @@ return (c);
 }
 while (current != NULL)
 {
-printf("%d", current->n);
+printf("%d\n", current->n);
 current = current->next;
 ++c;
 }
