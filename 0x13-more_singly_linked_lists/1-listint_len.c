@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * listint_len - returns the number of elements in a SLL
- * h: a ptr to the head
+ * @h: a ptr to the head
  * Return: the number of nodes
  */
 size_t listint_len(const listint_t *h)
