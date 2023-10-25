@@ -15,40 +15,32 @@ listint_t *h;
 listint_t *new;
 if (head == NULL)
 {
-return (NULL);
-}
+return (NULL); }
 if (*head == NULL)
 {
-return (NULL);
-}
+return (NULL); }
 current = *head;
 h = *head;
 c = 0;
 while (current != NULL)
 {
 current = current->next;
-++c;
-}
+++c; }
 if (idx >= c)
 {
-return (NULL);
-}
+return (NULL); }
 for (i = 0; i < idx; ++i)
 {
-h = h->next;
-}
+h = h->next; }
 new = (listint_t *)(malloc(sizeof(listint_t)));
 if (new == NULL)
 {
-return (NULL);
-}
+return (NULL); }
 new->n = n;
 new->next = h;
 h = *head;
 for (i = 0; i < (idx - 1); ++i)
 {
-h = h->next;
-}
+h = h->next; }
 h->next = new;
-return (new);
-}
+return (new); }
