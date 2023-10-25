@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * print_listint_safe - funct
- * head: ptr
+ * @head: ptr
  * Return: number of nodes
  */
 size_t print_listint_safe(const listint_t *head)
