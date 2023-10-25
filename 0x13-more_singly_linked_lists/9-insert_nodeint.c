@@ -13,7 +13,7 @@ unsigned int i;
 listint_t *current;
 listint_t *h;
 listint_t *new;
-if (h == NULL)
+if (*head == NULL)
 {
 return (NULL);
 }
