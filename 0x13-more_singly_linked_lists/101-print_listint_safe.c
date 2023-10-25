@@ -14,7 +14,7 @@ if (current == NULL)
 {
 return (c);
 }
-while (current != NULL || current == head)
+while (current != NULL || current != head)
 {
 printf("%d\n", current->n);
 current = current->next;
