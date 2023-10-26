@@ -18,5 +18,5 @@ if (!(mask & (*n)))
 {
 *n = (mask | (*n));
 }
-return (-1);
+return (1);
 }
