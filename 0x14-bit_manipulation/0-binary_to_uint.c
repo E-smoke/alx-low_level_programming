@@ -31,7 +31,7 @@ for (i = (len - 1); i >= 0; --i)
 if (b[i] == '1')
 {
 p = 1;
-for (j = 1; j <= (len - 1 -i) ; ++j)
+for (j = 1; j <= (len - 1 - i) ; ++j)
 {
 p = p * 2;
 }
