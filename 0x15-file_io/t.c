@@ -1,8 +1,9 @@
 #include "main.h"
 #include "0-read_textfile.c"
+#include "1-create_file.c"
 int main(void)
 {
-read_textfile("pro.txt", 12);
+create_file("pro.txt", "ko");
 
 return (0);
 }
