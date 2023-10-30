@@ -32,6 +32,10 @@ if (ind < 0)
 {
 return (0);
 }
+if (ind == 0)
+{
+return (i - 1);
+}
 ind = write(1, &buf, 1);
 if (ind < 0)
 {
