@@ -28,16 +28,26 @@ i = 1;
 while (i <= letters)
 {
 ind = read(fd, &buf, 1);
-if (ind <= 0)
+if (ind < 0)
 {
 close(fd);
 return (0);
 }
+if (ind == 0)
+{
+close(fd);
+return (i - 1);
+}
 ind = write(1, &buf, 1);
-if (ind <= 0)
+if (ind < 0)
 {
 close(fd);
 return (0);
+}
+if (ind == 0)
+{
+close(fd);
+return (i - 1);
 }
 ++i;
 }
