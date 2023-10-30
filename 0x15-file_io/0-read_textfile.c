@@ -28,12 +28,12 @@ i = 1;
 while (i <= letters)
 {
 ind = read(fd, &buf, 1);
-if (ind <= 0)
+if (ind < 0)
 {
 return (0);
 }
 ind = write(1, &buf, 1);
-if (ind <= 0)
+if (ind < 0)
 {
 return (0);
 }
