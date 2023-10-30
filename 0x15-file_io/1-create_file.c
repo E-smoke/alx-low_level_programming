@@ -9,7 +9,6 @@ int create_file(const char *filename, char *text_content)
 {
 int i;
 int fd;
-int ind;
 if (filename == NULL || text_content == NULL)
 {
 return (-1); }
@@ -25,7 +24,7 @@ i = 0;
 while (text_content[i] != '\0')
 {
 ++i; }
-ind = write(fd, text_content, i);
+write(fd, text_content, i);
 close(fd);
 return (1); }}
 else
@@ -43,7 +42,7 @@ i = 0;
 while (text_content[i] != '\0')
 {
 ++i; }
-ind = write(fd, text_content, i);
+write(fd, text_content, i);
 close(fd); }}}
 return (1); }
 
