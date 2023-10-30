@@ -28,7 +28,7 @@ ind = read(fd, &buf, 1);
 if (ind < 0)
 {
 close(fd);
-return (0); }
+return (i - 1); }
 if (ind == 0)
 {
 close(fd);
@@ -37,7 +37,7 @@ ind = write(1, &buf, 1);
 if (ind < 0)
 {
 close(fd);
-return (0); }
+return (i - 1); }
 if (ind == 0)
 {
 close(fd);
