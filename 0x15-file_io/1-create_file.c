@@ -27,7 +27,7 @@ while (text_content[i] != '\0')
 ++i; }
 ind = write(fd, text_content, i);
 close(fd);
-return (ind); }}
+return (1); }}
 else
 {
 close(fd);
@@ -45,5 +45,5 @@ while (text_content[i] != '\0')
 ++i; }
 ind = write(fd, text_content, i);
 close(fd); }}}
-return (ind); }
+return (1); }
 
