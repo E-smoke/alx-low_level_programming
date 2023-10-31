@@ -1,3 +1,17 @@
 ko ama
 eii fashion
 emoji
+In the context of the cp command implementation provided earlier, argc should be checked for equality with 4, not 3, because the program requires four arguments:
+
+The program name itself (automatically provided as the first argument, argv[0]).
+The command-line argument representing the source file path (provided by the user as argv[1]).
+The command-line argument representing the destination file path (provided by the user as argv[2]).
+The NULL pointer that marks the end of the argv array (automatically provided by the system).
+So, the correct condition for checking the number of arguments in this case should be if (argc != 4). This ensures that the program is provided with the correct number of arguments, including the program name, source file path, destination file path, and the NULL pointer at the end of the argv array.
+In the given code, argc is compared to 3 to ensure that the program is provided with the correct number of command-line arguments. In the context of the provided cp implementation, the program expects two arguments: the source file and the destination file.
+
+When a C program is executed from the command line, the first argument (argv[0]) is the program's name itself. Any additional arguments provided after the program name are stored in the argv array, and the total number of arguments, including the program name, is stored in the argc variable.
+
+In the cp command implementation, the program needs to know the source file and destination file paths to perform the copying operation. Therefore, it checks if argc is not equal to 3 to ensure that exactly two additional arguments (source file and destination file) are provided after the program name.
+
+If argc is not 3, it means that the user did not provide the correct number of arguments, and the program prints a usage message indicating the correct way to use the program. This helps prevent the program from running with insufficient or excessive arguments, which could lead to unexpected behavior.

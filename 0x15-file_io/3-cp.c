@@ -18,7 +18,7 @@ while (chek != 0)
 for (i = 0; i < 1024; ++i)
 {
 buf[i] = '\0'; }
-chek = read(fdf, buf, 1024);
+chek = read(fdf, buf, 1023);
 if (chek == -1)
 {
 ind = close(fdf);
