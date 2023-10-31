@@ -13,7 +13,7 @@ check(argc);
 fdf = openff(argv);
 fdt = openft(argv);
 chek = 1;
-while (ind != 0)
+while (chek != 0)
 {
 for (i = 0; i < 1024; ++i)
 {
