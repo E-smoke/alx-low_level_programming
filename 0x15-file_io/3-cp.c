@@ -8,15 +8,18 @@
 int main(int argc, char *argv[])
 {
 char buf[1024];
-int fdf, i, ind, ind1, fdt;
+int fdf, i, ind, ind1, fdt, chek;
 check(argc);
 fdf = openff(argv);
 fdt = openft(argv);
+chek = 1;
+while (ind != 0)
+{
 for (i = 0; i < 1024; ++i)
 {
 buf[i] = '\0'; }
-ind = read(fdf, buf, 1024);
-if (ind == -1)
+chek = read(fdf, buf, 1024);
+if (chek == -1)
 {
 ind = close(fdf);
 ind1 = close(fdt);
@@ -44,7 +47,7 @@ if (ind1 == -1)
 dprintf(2, "Error: Can't close fd %d\n", fdt);
 exit(100); }
 dprintf(2, "Error: Can't write to %s\n", argv[3]);
-exit(99); }
+exit(99); }}
 return (0); }
 /**
  * check - check
