@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		fprintf(stderr, "Usage: %s elf_filename\n", argv[0]);
-		return 98;
+		return (98);
 	}
 
 	fd = open(argv[1], O_RDONLY);
@@ -62,5 +62,5 @@ int main(int argc, char *argv[])
 	printf("Entry point address:               %#lx\n", (unsigned long)elf_header.e_entry);
 
 	close(fd);
-	return 0;
+	return (0);
 }
