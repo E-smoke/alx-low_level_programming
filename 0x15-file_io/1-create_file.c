@@ -32,8 +32,11 @@ close(fd);
 fd = open(filename, O_WRONLY);
 if (fd == -1)
 {
-printf("%d", fd);
 return (-1); }
+if (len == 0)
+{
+return (1);
+}
 ind = write(fd, text_content, len);
 if (ind == len)
 {
