@@ -85,7 +85,7 @@ return (fd);
 int openft(char **argv)
 {
 int fd;
-fd = open(argv[3], O_WRONLY | O_CREAT | O_TRUNC, 664);
+fd = open(argv[3], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 if (fd == -1)
 {
 dprintf(2, "Error: Can't write to %s\n", argv[3]);
