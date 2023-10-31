@@ -3,7 +3,6 @@
 #include "1-create_file.c"
 int main(void)
 {
-create_file("pro.txt", "ko");
-
+create_file("pr.txt", "ko");
 return (0);
 }

@@ -7,26 +7,36 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-int i;
-int fd;
+int fd, len, ind;
 if (filename == NULL || text_content == NULL)
 {
 return (-1); }
+len = 0;
+while (text_content[len] != '\0')
+{
+len++; }
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 {
 fd = creat(filename, 600);
-close(fd);
-if (text_content != NULL)
+if (fd == -1)
 {
+return (-1); }
+close(fd);
 fd = open(filename, O_WRONLY);
-i = 0;
-while (text_content[i] != '\0')
+if (fd == -1)
 {
-++i; }
-write(fd, text_content, i);
+printf("%d", fd);
+return (-1); }
+ind = write(fd, text_content, len);
+if (ind == len)
+{
 close(fd);
-return (1); }}
+return (1); }
+else
+{
+close(fd);
+return (-1); }}
 else
 {
 close(fd);
@@ -34,15 +44,10 @@ fd = open(filename, O_WRONLY | O_TRUNC);
 if (fd == -1)
 {
 return (-1); }
-else
+ind = write(fd, text_content, len); }
+if (ind != len)
 {
-if (text_content != NULL)
-{
-i = 0;
-while (text_content[i] != '\0')
-{
-++i; }
-write(fd, text_content, i);
-close(fd); }}}
+close(fd);
+return (-1); }
+close(fd);
 return (1); }
-
