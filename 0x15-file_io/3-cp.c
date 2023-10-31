@@ -31,7 +31,7 @@ if (ind1 == -1)
 {
 dprintf(2, "Error: Can't close fd %d\n", fdt);
 exit(100); }
-dprintf(2, "Error: Can't read from file %s\n", argv[2]);
+dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 exit(98); }
 ind = dprintf(fdt, "%s", buf);
 if (ind < 0)
@@ -46,7 +46,7 @@ if (ind1 == -1)
 {
 dprintf(2, "Error: Can't close fd %d\n", fdt);
 exit(100); }
-dprintf(2, "Error: Can't write to %s\n", argv[3]);
+dprintf(2, "Error: Can't write to %s\n", argv[2]);
 exit(99); }}
 return (0); }
 /**
@@ -55,7 +55,7 @@ return (0); }
  */
 void check(int argc)
 {
-if (argc != 4)
+if (argc != 3)
 {
 dprintf(2, "Usage: cp file_from file_to\n");
 exit(97);
@@ -69,10 +69,10 @@ exit(97);
 int openff(char **argv)
 {
 int fd;
-fd = open(argv[2], O_RDONLY);
+fd = open(argv[1], O_RDONLY);
 if (fd == -1)
 {
-dprintf(2, "Error: Can't read from file %s\n", argv[2]);
+dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
 return (fd);
@@ -85,10 +85,10 @@ return (fd);
 int openft(char **argv)
 {
 int fd;
-fd = open(argv[3], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 if (fd == -1)
 {
-dprintf(2, "Error: Can't write to %s\n", argv[3]);
+dprintf(2, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 return (fd);
