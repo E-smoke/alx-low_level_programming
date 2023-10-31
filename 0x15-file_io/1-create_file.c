@@ -8,13 +8,19 @@
 int create_file(const char *filename, char *text_content)
 {
 int fd, len, ind;
-if (filename == NULL || text_content == NULL)
+if (filename == NULL)
 {
 return (-1); }
+if (text_content == NULL)
+{
+len = 0;
+}
+else
+{
 len = 0;
 while (text_content[len] != '\0')
 {
-len++; }
+len++; }}
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 {
