@@ -17,6 +17,10 @@ if (new_node == NULL)
 {
 return (NULL);
 }
+if (idx == 0)
+{
+return (add_dnodeint(h, n));
+}
 i = 0;
 while (current != NULL)
 {
