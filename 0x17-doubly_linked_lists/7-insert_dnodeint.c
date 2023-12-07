@@ -38,7 +38,7 @@ current = current->next;
 }
 if (i == idx)
 {
-add_dnodeint_end(h, n);
+return (add_dnodeint_end(h, n));
 }
 free(new_node);
 return (NULL);
