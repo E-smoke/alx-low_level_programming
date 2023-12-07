@@ -36,6 +36,10 @@ return (new_node);
 current = current->next;
 ++i;
 }
+if (i == idx)
+{
+add_dnodeint_end(h, n);
+}
 free(new_node);
 return (NULL);
 }
