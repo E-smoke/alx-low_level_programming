@@ -1,12 +1,9 @@
-#include "0-print_name.c"
 #include <stdio.h>
-void a(char *s)
+void main()
 {
-printf("%s", s);
-}
-
-int main()
+typedef struct am
 {
-char *s = "ama";
-print_name(s, a);
+int a;
+int (*f)(int, int);
+} ama;
 }
