@@ -1,10 +1,10 @@
 #include "hash_tables.h"
 /**
- * hash_table_set - set
- * @ht: ptr to table
+ * hash_table_set - set hash table like python dictionary
+ * @ht: table
  * @key: key
  * @value: value
- * Return: 0 on failure and 1 on success
+ * Return: 1 on success and 0 on failure
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -50,7 +50,7 @@ return (1); }
  * @ht: 1p
  * @key: 2p
  * @value: 3p
- * @idx: 4p
+ * @idx: 5p
  * @new_item: 5p
  * Return: int
  */
