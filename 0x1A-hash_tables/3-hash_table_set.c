@@ -73,6 +73,8 @@ if (prev == current)
 else
 {
 prev->next = new_item; }
+free(current->key);
+free(current->value);
 free(current);
 return (1); }
 prev = current;
