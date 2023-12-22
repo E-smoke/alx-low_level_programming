@@ -60,7 +60,7 @@ hash_node_t *current;
 hash_node_t *prev;
 current = (ht->array)[idx];
 prev = current;
-while (current->next != NULL)
+while (current != NULL)
 {
 if (strcmp(current->key, key) == 0)
 {
