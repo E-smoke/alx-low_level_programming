@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 /**
  * hash_table_create - creates a new hash table with size @size
- * @size - size of the new hash table
- * Return - ptr to the new hash table
+ * @size: size of the new hash table
+ * Return: ptr to the new hash table
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
