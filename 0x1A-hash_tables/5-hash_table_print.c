@@ -19,7 +19,7 @@ append = "";
 for (i = 0; i < ht->size; ++i)
 {
 ca = (ht->array)[i];
-while(ca != NULL)
+while (ca != NULL)
 {
 printf("%s\'%s\': \'%s\'", append, ca->key, ca->value);
 append = ", ";
