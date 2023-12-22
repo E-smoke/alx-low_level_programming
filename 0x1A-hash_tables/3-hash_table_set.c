@@ -42,7 +42,7 @@ if (_while(ht, key, value, idx, new_item))
 return (1); }
 strcpy(new_item->key, key);
 strcpy(new_item->value, value);
-new_item->next = ((ht->array)[idx])->next;
+new_item->next = ((ht->array)[idx]);
 (ht->array)[idx] = new_item; }
 return (1); }
 /**
