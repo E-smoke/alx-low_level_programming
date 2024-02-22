@@ -5,7 +5,11 @@ def island_perimeter(grid):
     """perimeter module"""
     p = 0
     row = len(grid)
+    if row == 0:
+        return 0
     col = len(grid[0])
+    if col == 0:
+        return 0
     for r in range(row):
         for c in range(col):
             if grid[r][c] == 1:
